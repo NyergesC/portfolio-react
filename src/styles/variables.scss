@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat&family=Ms+Madi&family=Overpass:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$Poppins: 'Poppins', sans-serif;
+
+//colour
+$dark: rgb(29,29,29);
+$light: #fff;
+$primary: rgb(162,162,246);
+$bg: rgb(244,244,255);
+
+//spacing
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+//border-radius
+$borderRadius: 12px;
+
+//header height 
+$headerHeight: 100px;
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        //768px
+        @media (min-width: 48em) {
+            @content
+        }
+    }
+}
